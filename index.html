@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieAPI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- logo start -->
+         <div class="logo">
+            <div class="container">
+                <p>List<span>Movie.</span></p>
+            </div>
+         </div>
+         <!-- end -->
+
+         <!-- search start -->
+         <div class="search-container">
+            <div class="search-element">
+                <h3>Search Movie:</h3>
+                <input type="text" class="form-control" placeholder="Search Movie ..." id="movie-search-box" onkeyup="findMovies()" onclick="findMovies()">
+
+                <div class="search-list" id="search-list"></div>
+            </div>
+         </div>
+         <!-- end search -->
+
+         <!-- result start -->
+          <div class="container">
+            <div class="result-container">
+                <div class="result-grid" id="result-grid"></div>
+            </div>
+          </div>
+          <!-- end result -->
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
